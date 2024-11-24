@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h2>Create Account</h2>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Create Account</legend>
+                <div>
+
+                    <label for="fname">First name *</label><br><br>
+                    <input type="text" id="fname" name="fname"><br><br>
+                </div>
+                <div>
+
+                    <label for="lname">Last name </label><br><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                </div>
+                <div>
+
+                    <label for="email">Email *</label><br><br>
+                    <input type="email" id="email" name="email"><br><br>
+                </div>
+                <div>
+
+                    <lable for="password">Password</lable><br><br>
+                    <input type="password" id="password" name="password"><br><br>
+                </div>
+                <div>
+
+                    <lable for="Cfpassword">Confirm Password *</lable><br><br>
+                    <input type="password" id="Cfpassword" name="Cfpassword"><br><br>
+                </div>
+            <div>
+                <label for="Male">Gender</label><br><br>
+                <lable for="Male">Male</lable>
+                <input type="radio" id="Male" name="Male"><br><br>
+                <lable for="fMale">female</lable>
+                <input type="radio" id="Male" name="Male"><br><br>
+            </div>
+            <div>
+                
+                <lable for="hobbie">hobbie</lable><br><br>
+                <label for="Music">Music</label>
+                <input type="checkbox" id="music" name="music">
+                <label for="Sport">Sport</label>
+                <input type="checkbox" id="Sport" name="Sport">
+                <label for="Travel">Travel</label>
+                <input type="checkbox" id="travel" name="travel">
+                <label for="Movies">Movies</label>
+                <input type="checkbox" id="Movies" name="Movies"><br><br>
+            </div>
+            
+            <div>
+                <label for="Source">Source Of Income</label><br>
+                <select id="Source">
+                    <option value="Employed">Employed</option>
+                    <option value="Costumer">Costumer</option>
+                    <option value="Maneger">Maneger</option>
+                </select><br><br>
+            </div>
+            <div>
+                
+                <label for="Income">Income</label>
+                <input type="range" id="Income" name="Income" min="0" max="2000">
+                <label for="num">20k</label><br><br>
+            </div>
+            
+            <div>
+                <label for="pic">Upload Profile Picture </label><br>
+                <input type="file" id="pic" name="pic"><br><br>
+            </div>
+
+            <div>
+                <label for="Age">Age</label><br>
+                <input type="text" id="Age" name="Age"><br><br>
+            </div>
+            <lable for="bio">Bio </lable><br>
+            <textarea rows="4" cols="50" name="Comment" form="usrform">
+                
+            </textarea>
+            
+        </fieldset>
+        <footer>
+            <input type="submit" value="Submit">
+        </form>
+        
+    </footer>
+    
+</body>
+</div>
+</html>
