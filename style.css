@@ -6,12 +6,60 @@ body{
 .container{
     max-width: 110vh;
     margin: 0 auto;
-    border-radius: 5px;
-    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    overflow: hidden;
+    border: 5px solid darkblue;
     
 
 }
-h2{
-   display: block;
+.header{
+   padding: 20px;
    background-color: aquamarine;
+    text-align: center;
+    border-radius: 5px;
+}
+.footer{
+    padding: 20px;
+   background-color: aquamarine;
+    text-align: end;
+    border-radius: 5px;
+
+}
+.center{
+    display: grid;
+    gap: 10px;
+
+}
+
+.name {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+.row1{
+    width: 40vh;
+}
+.row2{
+    width: 94vh;
+}
+.password{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.nice{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+
+}
+.gender{
+   display: flex;
+   flex-direction: row;
+   gap: 20px; 
+   
 }

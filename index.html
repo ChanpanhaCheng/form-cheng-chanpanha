@@ -8,91 +8,122 @@
 </head>
 <body>
     <div class="container">
+        <div class="header">
 
-        <h2>Create Account</h2>
-        <form action="/action_page.php">
-            <fieldset>
-                <legend>Create Account</legend>
+            <h2>Create Account</h2>
+        </div>
+        <div>
+
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend>Create Account</legend>
+                    <div class="center">
+                        <div class="name">
+
+                            <div >
+                                
+                                <label for="fname">First name *</label><br><br>
+                                <input class="row1" type="text" id="fname" name="fname"><br><br>
+                            </div>
+                            <div >
+                                
+                                <label for="lname">Last name </label><br><br>
+                                <input class="row1" type="text" id="lname" name="lname"><br><br>
+                            </div>
+                        </div>
+                        <div>
+                            
+                            <label for="email">Email *</label><br><br>
+                            <input class="row2" type="email" id="email" name="email"><br><br>
+                        </div>
+                        <div class="password">
+
+                            <div>
+                                
+                                <lable for="password">Password</lable><br><br>
+                                <input class="row1" type="password" id="password" name="password"><br><br>
+                            </div>
+                            <div>
+                                
+                                <lable for="Cfpassword">Confirm Password *</lable><br><br>
+                                <input class="row1" type="password" id="Cfpassword" name="Cfpassword"><br><br>
+                            </div>
+                        </div>
+                        <div class="nice">
+
+                            <div>
+                                <label for="Male">Gender</label><br><br>
+                                <div class="gender">
+                                    <div>
+
+                                        <lable for="Male">Male</lable>
+                                        <input type="radio" id="Male" name="Male"><br><br>
+                                    </div>
+                                    <div>
+
+                                        <lable for="fMale">female</lable>
+                                        <input type="radio" id="Male" name="Male"><br><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                
+                                <lable for="hobbie">hobbie</lable><br><br>
+                                <label for="Music">Music</label>
+                                <input type="checkbox" id="music" name="music">
+                                <label for="Sport">Sport</label>
+                                <input type="checkbox" id="Sport" name="Sport">
+                                <label for="Travel">Travel</label>
+                                <input type="checkbox" id="travel" name="travel">
+                                <label for="Movies">Movies</label>
+                                <input type="checkbox" id="Movies" name="Movies"><br><br>
+                            </div>
+                        </div>
+            <div class="name">
+
                 <div>
-
-                    <label for="fname">First name *</label><br><br>
-                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="Source">Source Of Income</label><br>
+                    <select id="Source">
+                        <option value="Employed">Employed</option>
+                        <option value="Costumer">Costumer</option>
+                        <option value="Maneger">Maneger</option>
+                    </select><br><br>
                 </div>
                 <div>
-
-                    <label for="lname">Last name </label><br><br>
-                    <input type="text" id="lname" name="lname"><br><br>
+                    
+                    <label for="Income">Income</label>
+                    <input type="range" id="Income" name="Income" min="0" max="2000">
+                    <label for="num">20k</label><br><br>
                 </div>
-                <div>
-
-                    <label for="email">Email *</label><br><br>
-                    <input type="email" id="email" name="email"><br><br>
-                </div>
-                <div>
-
-                    <lable for="password">Password</lable><br><br>
-                    <input type="password" id="password" name="password"><br><br>
-                </div>
-                <div>
-
-                    <lable for="Cfpassword">Confirm Password *</lable><br><br>
-                    <input type="password" id="Cfpassword" name="Cfpassword"><br><br>
-                </div>
-            <div>
-                <label for="Male">Gender</label><br><br>
-                <lable for="Male">Male</lable>
-                <input type="radio" id="Male" name="Male"><br><br>
-                <lable for="fMale">female</lable>
-                <input type="radio" id="Male" name="Male"><br><br>
             </div>
-            <div>
+            <div class="name">
+
+                <div>
+                    <label for="pic">Upload Profile Picture </label><br>
+                    <input type="file" id="pic" name="pic"><br><br>
+                </div>
                 
-                <lable for="hobbie">hobbie</lable><br><br>
-                <label for="Music">Music</label>
-                <input type="checkbox" id="music" name="music">
-                <label for="Sport">Sport</label>
-                <input type="checkbox" id="Sport" name="Sport">
-                <label for="Travel">Travel</label>
-                <input type="checkbox" id="travel" name="travel">
-                <label for="Movies">Movies</label>
-                <input type="checkbox" id="Movies" name="Movies"><br><br>
+                <div>
+                    <label for="Age">Age</label><br>
+                    <input type="text" id="Age" name="Age"><br><br>
+                </div>
             </div>
-            
-            <div>
-                <label for="Source">Source Of Income</label><br>
-                <select id="Source">
-                    <option value="Employed">Employed</option>
-                    <option value="Costumer">Costumer</option>
-                    <option value="Maneger">Maneger</option>
-                </select><br><br>
-            </div>
-            <div>
-                
-                <label for="Income">Income</label>
-                <input type="range" id="Income" name="Income" min="0" max="2000">
-                <label for="num">20k</label><br><br>
-            </div>
-            
-            <div>
-                <label for="pic">Upload Profile Picture </label><br>
-                <input type="file" id="pic" name="pic"><br><br>
-            </div>
-
-            <div>
-                <label for="Age">Age</label><br>
-                <input type="text" id="Age" name="Age"><br><br>
-            </div>
-            <lable for="bio">Bio </lable><br>
+            <lable for="bio">Bio </lable>
             <textarea rows="4" cols="50" name="Comment" form="usrform">
                 
             </textarea>
+        </div>
+        </div>
             
         </fieldset>
-        <footer>
-            <input type="submit" value="Submit">
-        </form>
-        
-    </footer>
+        <div class="footer">
+
+            <footer>
+                <input type="submit" value="Submit">
+            </form>
+            
+        </footer>
+    </div>
     
 </body>
 </div>
